@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viwport" content="width=device-width, initial-scale=1.0">
+    <title>PayMe Survey Form</title>
+        <link rel="stylesheet" href="Css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+      <center> <img class="logo" src="images/PayMe PalePurpleLight.png" alt="logo-image"/></center> 
+    <h1 id="title">PayMe Survey Form</h1>
+    <p id="description">PayMe provides a fast and easy way to send and recieved money offline. You can transfer money to friends and family, make purchase etc. All you need to send money is the phone number if the recipient</p>
+    <form id="survey-form" method="" action="">
+        <p><label id="name-label">Full name</label></p>
+        <p><input id="name" name="name" type="text" size="25" maxlength="30" placeholder="Full name" required/></p>
+        <p><label id="email-label">Email address</label></p>
+        <p><input id="email" name="email" type="email" size="20" maxlength="20" placeholder="Email address" required/></p>
+        <p><label id="number-label">Phone number</label></p>
+        <p><input id="number" name="phone" type="number" size="9" max="500000" min="1000000" placeholder="Phone number" required/></p>
+        <p class="stress">What is your favourite features of PayMe</p>
+        <select id="dropdown">
+            <option selected="selected"></option>
+            <option>Easy money transfer</option>
+            <option>Transaction history and statics</option>
+            <option>Payment links</option>
+            <option>Business</option>
+            <option>Payment adds</option>
+        </select>
+        <p class="stress">What will you like to use PayMe for?</p>
+        <input class="radio" name="purpose" type="radio" value="business"/><label class="size">Business purposes </label><br>
+        <input class="radio" name="purpose" type="radio" value="transaction"/><lable class="size">Day-to-day transaction</lable><br>
+        <input class="radio" name="purpose" type="radio" value="Both"/><label class="size">Both</label><br> 
+
+        <p class="stress">What are your favourite features of PayMe?</p>
+        <input class="checkbox" name="features" type="checkbox" value="transfer"/><label class="size">Easy money transfer</label><br>
+        <input class="checkbox" name="features" type="checkbox" value="statistics"/><label class="size">Transaction history and statistics</label><br>
+        <input class="checkbox" name="features" type="checkbox" value="payment"/><label class="size">Payment links</label><br>
+    
+        <input class="checkbox" name="features" type="checkbox" value="Business"/><label class="size">Business</label><br>
+        <p class="stress">Any comment or suggestions?</p>
+        <textarea class="comment" name="comments"rows="5" placeholder="Enter your comment here..."></textarea>
+        <br>
+            <input id="submit" type="submit" value="Submit"/>
+        
+
+    </form>
+
+    
+</body>
+</html>
